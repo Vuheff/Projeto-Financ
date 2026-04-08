@@ -154,7 +154,9 @@ body {
 }
 
 .logout__button:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(233, 23, 23, 0.5);
+    color: #fff;
+    transition: 0.5s;
 }
 
 .logout__icon {
