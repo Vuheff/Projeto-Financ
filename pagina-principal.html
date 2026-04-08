@@ -4,91 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon/icon-aba.svg" type="Icon-aba.svg">
-	<link rel="stylesheet" href="/css/pagina-principal.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon/icon-aba.svg" type="image/svg+xml">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/pagina-principal.css">
 </head>
 
 <body>
-	<div class="sidebar">
-<div class="sidebarcontent">
-<div class="container">
-<img class="container-icon" alt="">
-<div class="container2">
-<div class="heading-1">
-<b class="financehub">FinanceHub</b>
-</div>
-<div class="paragraph">
-<div class="gesto-inteligente">Gestão Inteligente</div>
-</div>
-</div>
-</div>
-<div class="container3">
-<div class="container4">
-<div class="container5">
-<div class="j">J</div>
-</div>
-<div class="container6">
-<div class="paragraph2">
-<div class="joo-silva">João Silva</div>
-</div>
-<div class="paragraph3">
-<div class="gesto-inteligente">joao@exemplo.com</div>
-</div>
-</div>
-</div>
-</div>
-<div class="navigation">
-<div class="paragraph4">
-<div class="menu">Menu</div>
-</div>
-<div class="link">
-<img class="icon" alt="">
-<div class="sidebarcontent2">
-<div class="joo-silva">Dashboard</div>
-</div>
-</div>
-<div class="link2">
-<img class="icon" alt="">
-<div class="sidebarcontent3">
-<div class="transaes">Transações</div>
-</div>
-</div>
-<div class="link3">
-<img class="icon" alt="">
-<div class="sidebarcontent4">
-<div class="transaes">Contas</div>
-</div>
-</div>
-<div class="link4">
-<img class="icon" alt="">
-<div class="sidebarcontent5">
-<div class="transaes">Metas</div>
-</div>
-</div>
-<div class="link5">
-<img class="icon" alt="">
-<div class="sidebarcontent6">
-<div class="relatrios">Relatórios</div>
-</div>
-</div>
-<div class="link6">
-<img class="icon" alt="">
-<div class="sidebarcontent7">
-<div class="transaes">Configurações</div>
-</div>
-</div>
-</div>
-<div class="container7">
-<div class="button">
-<img class="icon" alt="">
-<div class="text">
-<div class="transaes">Sair da conta</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+    <aside class="sidebar">
+
+        <!-- Logo -->
+        <div class="sidebar__header">
+            <img class="sidebar__logo-icon" alt="">
+
+            <div class="sidebar__logo-text">
+                <h1 class="sidebar__title">FinanceHub</h1>
+                <p class="sidebar__subtitle">Gestão Inteligente</p>
+            </div>
+        </div>
+
+        <!-- User -->
+        <div class="sidebar__user">
+            <div class="user__avatar">J</div>
+
+            <div class="user__info">
+                <p class="user__name">João Silva</p>
+                <p class="user__email">joao@exemplo.com</p>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="sidebar__nav">
+            <p class="nav__title">Menu</p>
+
+            <div class="nav__item">
+                <img class="nav__icon" alt="">
+                <span>Dashboard</span>
+            </div>
+
+            <div class="nav__item">
+                <img class="nav__icon" alt="">
+                <span>Transações</span>
+            </div>
+
+            <div class="nav__item">
+                <img class="nav__icon" alt="">
+                <span>Contas</span>
+            </div>
+
+            <div class="nav__item">
+                <img class="nav__icon" alt="">
+                <span>Metas</span>
+            </div>
+
+            <div class="nav__item">
+                <img class="nav__icon" alt="">
+                <span>Relatórios</span>
+            </div>
+
+            <div class="nav__item">
+                <img class="nav__icon" alt="">
+                <span>Configurações</span>
+            </div>
+        </nav>
+
+        <!-- Logout -->
+        <div class="sidebar__footer">
+            <button class="logout__button">
+                <img class="logout__icon" alt="">
+                <span>Sair da conta</span>
+            </button>
+        </div>
+
+    </aside>
+</body>
+</html>
