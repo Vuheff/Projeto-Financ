@@ -3,30 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>FinanceHub - Dashboard</title>
+
+    <link rel="shortcut icon" href="/favicon/icon-site.svg" type="image/x-icon">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     
     <!-- Google Icons -->
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon/icon-site.svg" type="image/svg+xml">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
     <!-- CSS -->
     <link rel="stylesheet" href="/css/pagina-principal.css">
 </head>
 
 <body>
     <aside class="sidebar">
-
         <!-- Logo -->
         <div class="sidebar__header"> 
-            <img src="favicon/icon-site.svg" class="sidebar__logo-icon" alt="">
-
+            <div class="sidebar__logo-icon">
+                <span class="material-icons" style="color: white;">account_balance_wallet</span>
+            </div>
             <div class="sidebar__logo-text">
                 <h1 class="sidebar__title">FinanceHub</h1>
                 <p class="sidebar__subtitle">Gestão Inteligente</p>
@@ -36,7 +35,6 @@
         <!-- User -->
         <div class="sidebar__user">
             <div class="user__avatar">J</div>
-
             <div class="user__info">
                 <p class="user__name">João Silva</p>
                 <p class="user__email">joao@exemplo.com</p>
@@ -46,35 +44,29 @@
         <!-- Navigation -->
         <nav class="sidebar__nav">
             <p class="nav__title">Menu</p>
-
-            <div class="nav__item">
+            <div class="nav__item active">
                 <span class="material-icons">dashboard</span>
-                dashboard
+                Dashboard
             </div>
-
             <div class="nav__item">
                 <span class="material-icons">wallet</span>
                 Transações
             </div>
-
             <div class="nav__item">
                 <span class="material-icons">account_balance</span>
                 Contas
             </div>
-
             <div class="nav__item">
                 <span class="material-icons">add_task</span>
-                <span>Metas</span>
+                Metas
             </div>
-
             <div class="nav__item">
                 <span class="material-icons">bar_chart</span>
-                <span>Relatórios</span>
+                Relatórios
             </div>
-
             <div class="nav__item">
                 <span class="material-icons">settings</span>
-                <span>Configurações</span>
+                Configurações
             </div>
         </nav>
 
@@ -85,13 +77,147 @@
                 Sair da conta
             </button>
         </div>
-
     </aside>
 
-    <main>
-        
-    </main>
+    <main class="pagina-central">
+        <div class="menu-superior">
+            <div class="texto-superior">
+                <p>Boa tarde,</p>
+                <h1>João Silva 👋</h1>
+            </div> 
+            <button class="botão-transação">+ Nova Transação</button>
+        </div>
 
-    
+        <div class="principal">
+            <!-- Card de Patrimônio Principal -->
+            <div class="card-patrimonio">
+                <div class="patrimonio-header">
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <span class="material-icons" style="font-size: 18px;">account_balance</span>
+                        Patrimônio Total
+                    </div>
+                    <span class="material-icons" style="font-size: 18px;">visibility</span>
+                </div>
+                <div class="patrimonio-valor">R$ 42.455,00</div>
+                <div class="patrimonio-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <span class="material-icons" style="font-size: 14px; color: white;">arrow_upward</span>
+                        </div>
+                        <div class="stat-info">
+                            <p>Receitas</p>
+                            <h2>R$ 11.710,00</h2>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <span class="material-icons" style="font-size: 14px; color: white;">arrow_downward</span>
+                        </div>
+                        <div class="stat-info">
+                            <p>Despesas</p>
+                            <h2>R$ 4.364,50</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid de Cards Secundários -->
+            <div class="grid-cards">
+                <div class="card-secundario">
+                    <div class="card-secundario__header">
+                        <div class="card-secundario__icon icon-receita">
+                            <span class="material-icons">trending_up</span>
+                        </div>
+                        <div class="card-secundario__badge badge-positivo">↑ 12.5%</div>
+                    </div>
+                    <div class="card-secundario__label">Receitas do Mês</div>
+                    <div class="card-secundario__valor">R$ 11.710,00</div>
+                </div>
+
+                <div class="card-secundario">
+                    <div class="card-secundario__header">
+                        <div class="card-secundario__icon icon-despesa">
+                            <span class="material-icons">trending_down</span>
+                        </div>
+                        <div class="card-secundario__badge badge-negativo">↓ 8.2%</div>
+                    </div>
+                    <div class="card-secundario__label">Despesas do Mês</div>
+                    <div class="card-secundario__valor">R$ 4.364,50</div>
+                </div>
+
+                <div class="card-secundario">
+                    <div class="card-secundario__header">
+                        <div class="card-secundario__icon icon-investimento">
+                            <span class="material-icons">savings</span>
+                        </div>
+                        <div class="card-secundario__badge badge-positivo">↑ 5.4%</div>
+                    </div>
+                    <div class="card-secundario__label">Investimentos</div>
+                    <div class="card-secundario__valor">R$ 26.380,50</div>
+                </div>
+            </div>
+
+            <!-- Seção de Gráficos em Linha (Horizontal) -->
+            <div class="secao-graficos">
+                <!-- Evolução Financeira -->
+                <div class="card-grafico card-grafico--grande">
+                    <div class="card-grafico__header">
+                        <h2 class="card-grafico__title">Evolução Financeira</h2>
+                        <div class="card-grafico__periodo">Últimos 6 meses</div>
+                    </div>
+                    <div class="grafico-container">
+                        <!-- Simulação do gráfico de linha do arquivo 4 -->
+                        <div style="width: 100%; height: 100%; position: relative;">
+                            <div class="eixo-texto" style="left: 0; top: 0;">14k</div>
+                            <div class="eixo-texto" style="left: 0; top: 50px;">11k</div>
+                            <div class="eixo-texto" style="left: 0; top: 100px;">7k</div>
+                            <div class="eixo-texto" style="left: 0; top: 150px;">4k</div>
+                            <div class="eixo-texto" style="left: 0; top: 200px;">0k</div>
+                            
+                            <!-- SVG para a linha do gráfico -->
+                            <svg width="100%" height="200" style="position: absolute; left: 40px;">
+                                <path d="M0,150 L100,120 L200,140 L300,80 L400,100 L500,50" fill="none" stroke="#3B82F6" stroke-width="3" />
+                                <path d="M0,180 L100,170 L200,175 L300,160 L400,165 L500,155" fill="none" stroke="#E11D48" stroke-width="3" />
+                            </svg>
+                            
+                            <div class="eixo-texto" style="left: 40px; bottom: 0;">Out</div>
+                            <div class="eixo-texto" style="left: 140px; bottom: 0;">Nov</div>
+                            <div class="eixo-texto" style="left: 240px; bottom: 0;">Dez</div>
+                            <div class="eixo-texto" style="left: 340px; bottom: 0;">Jan</div>
+                            <div class="eixo-texto" style="left: 440px; bottom: 0;">Fev</div>
+                            <div class="eixo-texto" style="left: 540px; bottom: 0;">Mar</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gastos da Semana -->
+                <div class="card-grafico card-grafico--pequeno">
+                    <div class="card-grafico__header">
+                        <h2 class="card-grafico__title">Gastos da Semana</h2>
+                    </div>
+                    <div class="grafico-container">
+                        <!-- Simulação do gráfico de barras do arquivo 4 -->
+                        <div style="width: 100%; height: 100%; position: relative;">
+                            <div class="barra-grafico" style="left: 40px; height: 51px;"></div>
+                            <div class="barra-grafico" style="left: 80px; height: 72px;"></div>
+                            <div class="barra-grafico" style="left: 120px; height: 28px;"></div>
+                            <div class="barra-grafico" style="left: 160px; height: 99px;"></div>
+                            <div class="barra-grafico" style="left: 200px; height: 142px;"></div>
+                            <div class="barra-grafico" style="left: 240px; height: 54px;"></div>
+                            <div class="barra-grafico" style="left: 280px; height: 19px;"></div>
+                            
+                            <div class="eixo-texto" style="left: 40px; bottom: 0;">S</div>
+                            <div class="eixo-texto" style="left: 80px; bottom: 0;">T</div>
+                            <div class="eixo-texto" style="left: 120px; bottom: 0;">Q</div>
+                            <div class="eixo-texto" style="left: 160px; bottom: 0;">Q</div>
+                            <div class="eixo-texto" style="left: 200px; bottom: 0;">S</div>
+                            <div class="eixo-texto" style="left: 240px; bottom: 0;">S</div>
+                            <div class="eixo-texto" style="left: 280px; bottom: 0;">D</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
