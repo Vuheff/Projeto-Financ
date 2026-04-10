@@ -1,77 +1,79 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon/icon-site.svg" type="Icon-aba.svg">
-    <link rel="stylesheet" href="/Css/style.css">
-    
+    <title>FinanceHub - Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-    <!-- LADO ESQUERDO (VISUAL) -->
-    <div class="left">
-        <div class="info">
-            <h2>Controle total das suas finanças</h2>
-            <p>
-                Gerencie suas contas, acompanhe investimentos e alcance seus objetivos financeiros com nossa plataforma inteligente.
-            </p>
-
-            <div class="stats">
-                <div>
-                    <span class="number">50K+</span>
-                    <span>Usuários</span>
-                </div>
-                <div>
-                    <span class="number">R$2B+</span>
-                    <span>Gerenciados</span>
-                </div>
-                <div>
-                    <span class="number">4.9*</span>
-                    <span>Avaliação</span>
-                </div>
+    <aside class="sidebar">
+        <!-- Logo -->
+        <div class="sidebar__header"> 
+            <div class="sidebar__logo-icon">
+                <span class="material-icons" style="color: white;">account_balance_wallet</span>
+            </div>
+            <div class="sidebar__logo-text">
+                <h1 class="sidebar__title">FinanceHub</h1>
+                <p class="sidebar__subtitle">Gestão Inteligente</p>
             </div>
         </div>
-        <div class="brand">Financ</div>
-    </div>
 
-    <!-- LADO DIREITO (LOGIN) -->
-    <div class="right">
-        <div class="login-box">
-            <img src="" alt="">
-            <h1>Bem-vindo de volta</h1>
-            <p class="subtitle">Entre na sua conta para continuar</p>
-
-            <div class="form">
-                <div class="input-group">
-                    <label>Email</label>
-                    <input type="email" placeholder="seu@email.com">
-                </div>
-
-                <div class="input-group">
-                    <label>Senha</label>
-                    <input type="password" placeholder="••••••••">
-                </div>
-
-                <button class="btn">Entrar</button>
-            </div>
-
-            <p class="register">
-                Não tem conta? <span>Criar conta grátis</span>
-            </p>
-
-            <div class="test-box">
-                <strong>💡 Credenciais de teste:</strong>
-                <p>Email: joao@exemplo.com | Senha: 123456</p>
+        <!-- User -->
+        <div class="sidebar__user">
+            <div class="user__avatar">J</div>
+            <div class="user__info">
+                <p class="user__name">João Silva</p>
+                <p class="user__email">joao@exemplo.com</p>
             </div>
         </div>
-    </div>
 
-</div>
-    
+        <!-- Navigation -->
+        <nav class="sidebar__nav">
+            <p class="nav__title">Menu</p>
+            <div class="nav__item active" data-page="dashboard">
+                <span class="material-icons">dashboard</span>
+                Dashboard
+            </div>
+            <div class="nav__item" data-page="transacoes">
+                <span class="material-icons">wallet</span>
+                Transações
+            </div>
+            <div class="nav__item" data-page="contas">
+                <span class="material-icons">account_balance</span>
+                Contas
+            </div>
+            <div class="nav__item" data-page="metas">
+                <span class="material-icons">add_task</span>
+                Metas
+            </div>
+            <div class="nav__item" data-page="relatorios">
+                <span class="material-icons">bar_chart</span>
+                Relatórios
+            </div>
+            <div class="nav__item" data-page="configuracoes">
+                <span class="material-icons">settings</span>
+                Configurações
+            </div>
+        </nav>
+
+        <!-- Logout -->
+        <div class="sidebar__footer">
+            <button class="logout__button">
+                <span class="material-icons">exit_to_app</span>
+                Sair da conta
+            </button>
+        </div>
+    </aside>
+
+    <main class="pagina-central">
+        <!-- O conteúdo dinâmico (incluindo o cabeçalho de cada aba) será carregado aqui -->
+        <div id="content-area"></div>
+    </main>
+
+    <script src="/javascript/script.js"></script>
 </body>
 </html>
