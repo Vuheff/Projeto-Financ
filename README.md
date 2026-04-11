@@ -27,6 +27,8 @@ Mais do que um exercício técnico, o projeto foi pensado como um produto real, 
 - Interface limpa e intuitiva
 - Acesso de teste para exploração da aplicação
 
+<img width="1912" height="896" alt="image" src="https://github.com/user-attachments/assets/e990e62b-c325-479f-9451-792b460f2d21" />
+
 ---
 
 ## Tecnologias utilizadas
