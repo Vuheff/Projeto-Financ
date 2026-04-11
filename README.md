@@ -15,6 +15,8 @@ A aplicação permite que o usuário visualize e organize suas movimentações, 
 
 Mais do que um exercício técnico, o projeto foi pensado como um produto real, com foco em usabilidade, clareza e experiência do usuário.
 
+<img width="1909" height="894" alt="image" src="https://github.com/user-attachments/assets/a64ed449-bbe1-4de9-8e0d-34aaf40867b0" />
+
 ---
 
 ## Funcionalidades
