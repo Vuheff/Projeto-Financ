@@ -504,3 +504,156 @@ body {
 
 .valor-positivo { color: #00D492; font-weight: 600; }
 .valor-negativo { color: #FF4B4B; font-weight: 600; }
+
+/* --- ESTILOS DO MODAL --- */
+
+/* Fundo escurecido e embaçado */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fundo escuro */
+    backdrop-filter: blur(10px);    /* Efeito de desfoque (Glassmorphism) */
+    display: none;                  /* Escondido por padrão */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;                  /* Sempre por cima de tudo */
+    padding: 20px;
+}
+
+/* Quando o modal estiver aberto */
+.modal-overlay.active {
+    display: flex !important;
+}
+
+
+/* Container da Janela Centralizada */
+.modal-container {
+    background: #1D293D;
+    width: 100%;
+    max-width: 450px;
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.5);
+    animation: modalScale 0.2s ease-out;
+}
+
+@keyframes modalScale {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.modal-header h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.close-button {
+    background: transparent;
+    border: none;
+    color: #90A1B9;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.close-button:hover {
+    color: white;
+    transform: rotate(90deg);
+}
+
+/* Botões de Tipo (Receita / Despesa) */
+.transaction-type {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.type-btn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid #314158;
+    background: transparent;
+    color: #62748E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* Estilo Ativo - Receita */
+.type-btn.active[data-type="receita"] {
+    border-color: #00D492;
+    color: #00D492;
+    background: rgba(0, 212, 146, 0.1);
+}
+
+/* Estilo Ativo - Despesa */
+.type-btn.active[data-type="despesa"] {
+    border-color: #FF4D4D;
+    color: #FF4D4D;
+    background: rgba(255, 77, 77, 0.1);
+}
+
+/* Inputs do Formulário */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    color: #90A1B9;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 14px 18px;
+    background: #314158;
+    border: 1px solid #45556C;
+    border-radius: 14px;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #2B7FFF;
+}
+
+/* Botão de Enviar */
+.btn-transacao {
+    width: 100%;
+    padding: 16px;
+    margin-top: 10px;
+    background: linear-gradient(90deg, #2B7FFF 0%, #4F39F6 100%);
+    border: none;
+    border-radius: 14px;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(43, 127, 255, 0.3);
+    transition: 0.3s;
+}
+
+.btn-transacao:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 20px rgba(43, 127, 255, 0.4);
+}

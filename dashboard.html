@@ -133,8 +133,62 @@
     </div>
 </div>
 
+<!-- Modal de Nova Transação -->
+<div id="modal-overlay" class="modal-overlay">
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2>Nova Transação</h2>
+            <button id="close-modal" class="close-button">
+                <span class="material-icons">close</span>
+            </button>
+        </div>
+
+        <div class="modal-body">
+            <div class="transaction-type">
+                <button class="type-btn active" data-type="receita">
+                    <span class="material-icons">trending_up</span> Receita
+                </button>
+                <button class="type-btn" data-type="despesa">
+                    <span class="material-icons">trending_down</span> Despesa
+                </button>
+            </div>
+
+            <div class="input-group">
+                <label>Descrição</label>
+                <input type="text" placeholder="Ex: Supermercado">
+            </div>
+
+            <div class="input-group">
+                <label>Valor (R$)</label>
+                <input type="text" placeholder="0,00">
+            </div>
+
+            <div class="input-group">
+                <label>Categoria</label>
+                <select>
+                    <option value="" disabled selected>Selecione uma categoria</option>
+                    <option value="alimentacao">Alimentação</option>
+                    <option value="lazer">Lazer</option>
+                    <option value="saude">Saúde</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Data</label>
+                <input type="date">
+            </div>
+
+            <button class="btn-transacao">+ Nova Transação</button>
+        </div>
+    </div>
+</div>
+
+
+
 <style>
     .dashboard-container {
         animation: fadeIn 0.3s ease;
     }
 </style>
+
+
