@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navItems = document.querySelectorAll('.sidebar__nav .nav__item');
     const contentArea = document.getElementById('content-area');
 
-    // --- SUA LÓGICA DE NAVEGAÇÃO (MANTIDA) ---
+  
     async function loadPage(pageName) {
         try {
             const response = await fetch(`${pageName}.html`);
@@ -35,8 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
     loadPage('dashboard');
 
     // --- NOVA LÓGICA PARA O MODAL (ADICIONADA) ---
-    // Usamos o 'document' para ouvir cliques em qualquer lugar, 
-    // assim ele pega o botão mesmo que ele seja carregado depois.
     document.addEventListener('click', (event) => {
         // 1. Abrir o Modal (Botão + Nova Transação)
         if (event.target.closest('.botão-transação')) {
