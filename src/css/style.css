@@ -161,7 +161,7 @@ body {
 }
 
 .logout__button:hover {
-    transition: 0.5s;
+    transition: 0.3s;
     color: #FF4B4B;
 }
 
