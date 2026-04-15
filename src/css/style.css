@@ -657,3 +657,108 @@ body {
     transform: translateY(-2px);
     box-shadow: 0px 6px 20px rgba(43, 127, 255, 0.4);
 }
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.contas-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    animation: fadeIn 0.3s ease;
+}
+
+/* =========================
+   HEADER
+========================= */
+.contas-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contas-actions {
+    display: flex;
+    gap: 12px;
+}
+
+/* =========================
+   CARD PATRIMÔNIO
+========================= */
+.card-patrimonio--contas {
+    height: auto;
+    padding: 32px;
+    background: linear-gradient(
+        135deg,
+        #155DFC 0%,
+        #4F39F6 50%,
+        #7F22FE 100%
+    );
+}
+
+.patrimonio-footer p {
+    margin-top: 16px;
+    font-size: 12px;
+    color: #BEDBFF;
+}
+
+/* =========================
+   ÍCONES DAS CONTAS
+========================= */
+.icon-corrente {
+    background: rgba(59, 130, 246, 0.1);
+    color: #3B82F6;
+}
+
+.icon-poupanca {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10B981;
+}
+
+.icon-invest {
+    background: rgba(139, 92, 246, 0.1);
+    color: #8B5CF6;
+}
+
+/* =========================
+   FOOTER DOS CARDS
+========================= */
+.card-footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font-size: 11px;
+    color: #62748E;
+}
+
+/* =========================
+   STATUS DOTS
+========================= */
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.dot-blue {
+    background: #3B82F6;
+}
+
+.dot-green {
+    background: #10B981;
+}
+
+.dot-purple {
+    background: #8B5CF6;
+}
